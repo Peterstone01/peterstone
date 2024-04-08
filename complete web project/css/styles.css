@@ -1,0 +1,410 @@
+
+/*========================general styling =========================*/
+:root{
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --color-1: #FF204E;
+    --color-2: #A0153E;
+    --color-3: #5D0E41;
+    --color-3: #00224D;
+    --color-white :#fff;
+
+}
+
+body{
+    /* padding: 0;
+    margin: 0; */
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.7;
+    color: #516171;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700 !important;
+    color:var(--color-1) !important;
+}
+p{
+    font-size: 12px;
+}
+a{
+    color: #092032;
+    text-decoration: none;
+    transition: all .5s;
+    font-weight: 500;
+}
+img{
+    width: 100%;
+}
+.background-style{
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.intro h6{
+    color: orangered;
+    font-weight: 800;
+}
+.intro p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.section-padding{
+    padding: 30px;
+}
+
+/*===============================navbar1========================*/
+.top-nav{
+    background-color: var(--color-1);
+    padding: 5px;
+}
+.top-nav p{
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px;
+    color: white;
+}
+.top-nav i,  
+.top-nav span{
+    vertical-align: middle;
+}
+  
+.social-links a{
+    width: 30px;
+    height: 30px;
+    background-color:#a0153f61 ;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.social-links a:hover{
+    background-color: white;
+    color: var(--color-2);
+}
+.navbar{
+    box-shadow: var(--dark-shadow);
+}
+.navbar-brand{
+    color: var(--color-1);
+    font-weight: bolder;
+    font-size: 26px;
+}
+.brand-span{
+    color: var(--color-1);
+}
+.btn-brand{
+    padding: 5px;
+    background-color: var(--color-1);
+    font-weight: bold;
+    color: white;
+    transition: .5s;
+}
+.btn-brand:hover{
+    color: var(--color-4);
+    background-color: var(--color-2);
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color:var(--color-1);
+}
+
+/*=============slide===================*/
+.intro-span{
+    color: var(--color-1);
+}
+.slide1{
+    background-image: linear-gradient(hsla(207, 70%, 12%, 0.511), hsla(205, 68%, 11%, 0.733)), url(../images/9.jpg) ;
+
+ 
+    
+}
+
+.slide2{
+    background-image: linear-gradient(#0a213382, #091f2fbb), url(../images/2.jpg);
+
+}
+
+.slide3{
+    background-image: linear-gradient(#0a213382, #091f2fbb), url(../images/10.jpg)
+}
+
+.slide4{
+    background-image: linear-gradient(#0a213382, #091f2fbb), url(../images/8.jpg)
+}
+
+
+/*=======================owl carousel styling ==================*/
+/* .slider-wrapper{
+    margin-bottom: 200px;
+} */
+.owl-prev,
+.owl-next{
+    position: absolute;
+    top: 50%;
+    width: 50px !important;
+    height: 50px !important;
+    display: grid;
+    place-items: center;
+    background-color:var(--color-1) !important;
+    color: var(--color-white) !important;
+    font-weight: bolder;
+    margin-top: -30px !important;
+    border-radius: 100px !important;
+    font-size: 12px !important;
+    transition: .5s;
+}
+.owl-prev{
+    left: 0;
+}
+
+.owl-next{
+    right: 0;
+}
+.owl-prev:hover,
+.owl-next:hover{
+    background-color:var(--color-2) !important;
+    color: var(--color-white) !important;
+}
+
+/*======================================== ABOUT US PAGE =====================*/
+
+
+
+
+ section .line{
+    width: 30px;
+    height: 2px;
+    background-color:var(--color-1);
+    margin:0 auto ;
+ }
+ /* .img-box img{
+    height: 80vh;
+ } */
+ .about{
+    background-color: rgba(255, 255, 255, 0.781);
+    box-shadow: var(--dark-shadow);
+    padding: 20px;
+ }
+ .about p{
+    font-size: 12px;
+ }
+ .about .img-box{
+    width: 350px;
+    height: 480px;
+ }
+ .about .img-box img{
+    width: unset;
+ }
+ /* .about-text{
+    margin-left: -90px;  //////////////////  work on my media query for this
+ } */
+.list{
+    color: var(--color-2);
+}
+.info-2 li{
+    font-size: 12px;
+}
+ 
+/*======================================== SERVICES PAGE =====================*/
+.service-box{
+    box-shadow: var(--dark-shadow);
+    padding: 20px;
+}
+/* .service-box img{
+    width: 100%;
+    height: 300px;
+} */
+.service-box h5{
+    margin-top: 20px;
+    text-align: center;
+}
+.service-container{
+    padding: 30px;
+}
+
+/***************************************project page **********************/
+#project-slider .owl-next,
+#project-slider .owl-prev{
+    background-color: var(--color-1);
+    font-weight: bolder;
+}
+.work-container{
+    padding: 30px;
+}
+*/
+/* #project-slider .owl-next:hover,
+#project-slider .owl-prev:hover{
+    background-color: orangered !important;
+} */
+
+.project{
+    position: relative;
+}
+.project .overlay{
+    position: absolute;
+    background: linear-gradient(to bottom, #0a21334b, #091f2f7f);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+/* .project .content{
+
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    padding: 32px;
+} */
+.project h1{
+    font-size: 20px;
+    color: var(--color-white) !important;
+}
+
+.project h6{
+    font-size: 15px;
+    color: var(--color-white) !important;
+}
+.project h1,
+.project h6{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+.project h1{
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+.project h6::before{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color:var(--color-1);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+/***********************team members *******************/
+#team{
+    padding: 20px;
+    box-shadow: var(--dark-shadow);
+}
+.team-members {
+    text-align: center;
+}
+.team-members p{
+    color: var(--color-2);
+}
+.team-members .img-wrapper{
+    position: relative;
+}
+.team-members .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.356);
+    left: 0;
+    top: -10%;
+    transition: all .5s ease;
+
+    opacity: 0;
+}
+.team-members .img-wrapper .social-links{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+.team-members:hover .overlay{
+    opacity: 1;
+    top: 0;
+}
+.team-members:hover .social-links{
+    opacity: 1;
+    top:50%;
+   
+}
+/*****************************reviews page ************************/
+.item{
+    padding: 30px;
+
+ box-shadow: var(--dark-shadow);
+}
+
+
+
+
+.user{
+    width: 60px;
+    height: 60px;;
+    vertical-align: middle;
+    border-radius: 5px;  
+    padding: 5px;
+  
+}
+
+.star-img{
+    display: flex;
+    justify-content: left;
+}
+.img-wrap{
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--color-1);
+    border-radius: 5px;
+    
+    
+}
+.stars{
+    padding-left: 20px;
+}
+.quote{
+    color: var(--color-3);
+}
+.stars i{
+    color: var(--color-3);
+    margin-top: 0 !important;
+}
+.stars h4{
+   margin-bottom: 0;
+}
+.stars h6{
+    color: var(--color-3) !important;
+    font-size: 12px;
+    margin-top: 2px;
+}
+#review .item p{
+    margin-top: 2px !important;
+    
+}
+
+/**************************footer***************************/
+footer{
+    padding-top: 80px;
+    background-image: linear-gradient(hsla(207, 70%, 12%, 0.511), hsla(205, 68%, 11%, 0.733)), url(../images/2.jpg);
+    text-align: center;
+    /* color: white; */
+    padding-bottom: 40px;
+}
+.footer-top{
+    margin-bottom: 40px;
+}
+.footer-bottom{
+    margin-top: 40px;
+    border-top: 1px solid rgba(192, 192, 192, 0.408);
+}
+
+.footer-top .social-links{
+    color: var(--color-1) !important;
+}
+/****************************modal/contact************/
